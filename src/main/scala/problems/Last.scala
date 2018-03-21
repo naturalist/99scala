@@ -1,6 +1,6 @@
 package problems
 
-object Last {
+object Problem1 {
   def last[T](x: List[T]): Option[T] = {
     if (x == Nil)
       None
