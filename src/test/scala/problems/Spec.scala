@@ -42,3 +42,17 @@ class Problem4Spec extends FlatSpec with Matchers {
     Problem4.length(List(1)) shouldEqual 1
   }
 }
+
+class Problem5Spec extends FlatSpec with Matchers {
+  "The reverse function" should "reverse a list" in {
+    Problem5.reverse(List(1,2,3)) shouldEqual List(3, 2, 1)
+  }
+
+  it should "return an empty list if the list was empty" in {
+    Problem5.reverse(List()) shouldEqual List()
+  }
+
+  it should "return the same list if the list is 1 element" in {
+    Problem5.reverse(List(4)) shouldEqual List(4)
+  }
+}
