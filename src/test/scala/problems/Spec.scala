@@ -21,3 +21,10 @@ class Problem2Spec extends FlatSpec with Matchers {
     Problem2.penultimate(List(1)) shouldEqual None
   }
 }
+
+
+class Problem3Spec extends FlatSpec with Matchers {
+  "The nth function" should "return the n-th element in the list" in {
+    Problem3.nth(2, List(1, 3, 5, 7, 9)) shouldEqual Some(5)
+  }
+}
