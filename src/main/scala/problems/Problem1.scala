@@ -5,6 +5,9 @@ object Problem1 {
     if (x == Nil)
       None
     else
-      if (x.tail == Nil) Some(x.head) else last(x.tail)
+      if (x.tail == Nil) 
+        Some(x.head) 
+      else 
+        last(x.tail)
   }
 }
