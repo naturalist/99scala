@@ -28,3 +28,17 @@ class Problem3Spec extends FlatSpec with Matchers {
     Problem3.nth(2, List(1, 3, 5, 7, 9)) shouldEqual Some(5)
   }
 }
+
+class Problem4Spec extends FlatSpec with Matchers {
+  "The length function" should "return the number of elements in the list" in {
+    Problem4.length(List(1, 3, 5, 7, 9)) shouldEqual 5
+  }
+
+  it should "return 0 if the list if empty" in {
+    Problem4.length(List()) shouldEqual 0
+  }
+
+  it should "return 1 if the list has 1 element" in {
+    Problem4.length(List(1)) shouldEqual 1
+  }
+}
