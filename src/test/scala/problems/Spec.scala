@@ -56,3 +56,9 @@ class Problem5Spec extends FlatSpec with Matchers {
     Problem5.reverse(List(4)) shouldEqual List(4)
   }
 }
+
+class Problem6Spec extends FlatSpec with Matchers {
+  "The isPalindrome function" should "detect a palindrome" in {
+    Problem6.isPalindrome("meataem") shouldEqual true
+  }
+}
