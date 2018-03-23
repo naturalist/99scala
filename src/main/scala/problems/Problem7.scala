@@ -1,3 +1,5 @@
+package problems
+
 /*
  * flatMap is like map but the result of the function must consume the
  * GenTraversableOnce trait, so each element must be transformed into a List,
@@ -9,7 +11,7 @@
  */
 
 object Problem7 {
-  def flatten(xs: List[Any]): List[Any] = flatMap {
+  def flatten(xs: List[Any]): List[Any] = xs flatMap {
     case ms: List[_] => flatten(ms)
     case e           => List(e)
   }

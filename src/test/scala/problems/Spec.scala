@@ -62,3 +62,9 @@ class Problem6Spec extends FlatSpec with Matchers {
     Problem6.isPalindrome("meataem") shouldEqual true
   }
 }
+
+class Problem7Spec extends FlatSpec with Matchers {
+  "The flatten function" should "flatten a list" in {
+    Problem7.flatten(List(List(1, 1), 2, List(3, List(5, 8)))) shouldEqual List(1, 1, 2, 3, 5, 8)
+  }
+}
