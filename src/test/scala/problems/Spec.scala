@@ -68,3 +68,13 @@ class Problem7Spec extends FlatSpec with Matchers {
     Problem7.flatten(List(List(1, 1), 2, List(3, List(5, 8)))) shouldEqual List(1, 1, 2, 3, 5, 8)
   }
 }
+
+class Problem8Spec extends FlatSpec with Matchers {
+  "The compressRecursive function" should "compress a list" in {
+    Problem8.compressRecursive(List('a, 'a, 'a, 'a, 'b, 'c, 'c, 'a, 'a, 'd, 'e, 'e, 'e, 'e)) shouldEqual List('a, 'b, 'c, 'a, 'd, 'e)
+  }
+
+  "The compressFunc function" should "compress a list" in {
+    Problem8.compressFunc(List('a, 'a, 'a, 'a, 'b, 'c, 'c, 'a, 'a, 'd, 'e, 'e, 'e, 'e)) shouldEqual List('a, 'b, 'c, 'a, 'd, 'e)
+  }
+}
